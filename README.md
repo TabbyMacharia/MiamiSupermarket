@@ -48,18 +48,18 @@ app/src/main/res/layout/
 
 1. Clone the repository:
    ```
-   git clone https://github.com/<your-username>/MiamiSupermarket.git
+   git clone https://github.com/TabbyMacharia/MiamiSupermarket.git
    ```
 2. Open the project in Android Studio.
 3. Let Gradle sync, then run the app on an emulator or physical device (API 24+).
 
 ## Group Members
 
-Ruth Ndua 
-Maxwell Chege
-Lorna Kyalo
-Esther Kamau
-Tabitha Macharia
+1. Ruth Ndua
+2. Maxwell Chege
+3. Lorna Kyalo
+4. Esther Kamau
+5. Tabitha Macharia
 
 ## Course Info
 
