@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Supermarket heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#166534"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="MIAMI SUPERMARKET"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="SUPERMARKET PAY-POINT"
+            android:textColor="#166534"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Column headings -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="ITEM"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="QTY"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="UNIT PRICE"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="TOTAL"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!-- Item row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="6dp">
+
+            <Spinner
+                android:id="@+id/itemSpinner1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/quantity1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unitPrice1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="KES 0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/itemTotal1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="KES 0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Item row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="6dp">
+
+            <Spinner
+                android:id="@+id/itemSpinner2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/quantity2"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unitPrice2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="KES 0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/itemTotal2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="KES 0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Item row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="6dp">
+
+            <Spinner
+                android:id="@+id/itemSpinner3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/quantity3"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unitPrice3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="KES 0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/itemTotal3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="KES 0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Item row 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="6dp">
+
+            <Spinner
+                android:id="@+id/itemSpinner4"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/quantity4"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unitPrice4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="KES 0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/itemTotal4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="KES 0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Item row 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="6dp">
+
+            <Spinner
+                android:id="@+id/itemSpinner5"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="3" />
+
+            <EditText
+                android:id="@+id/quantity5"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:text="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unitPrice5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="KES 0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/itemTotal5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="end"
+                android:text="KES 0"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!-- Grand total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#DCFCE7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="GRAND TOTAL"
+                android:textColor="#166534"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/grandTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KES 0"
+                android:textColor="#166534"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Action buttons -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#166534"
+            android:text="CALCULATE TOTAL"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/receiptButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#15803D"
+            android:text="GENERATE RECEIPT"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
